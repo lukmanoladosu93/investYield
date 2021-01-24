@@ -1,0 +1,230 @@
+@import url('/assets/fonts/fonts.css');
+
+body{
+	font-family: Comfortaa!important;
+}
+
+.banner-img{
+	min-height:650px;
+	width:100%;
+	position:relative;
+	background-size: cover;
+	background-position:70% 30%;
+	background-image:url('../images/homePageBgImg.png');
+}
+.banner-img2{
+	height:750px;
+	width:100%;
+	position:relative;
+	background-size: cover;
+	background-position:70% 30%;
+	background-image:url('../images/whyInvestImg.png');
+}
+.overlay{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background-image: linear-gradient(267.96deg, #054BB4 11.2%, rgba(5, 83, 200, 0) 196.18%);
+	color:#fff;
+	display:flex;
+	align-items: center;
+	justify-content: end;
+	flex-direction: column;
+}
+.overlay2{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background: rgba(5, 83, 200, 0.9);
+	color:#fff;
+	display:flex;
+	align-items: center;
+	justify-content: end;
+	flex-direction: column;
+}
+
+.hideOverflow{
+	overflow: hidden!important;
+}
+
+/* Nav styles */
+.nav-menu-padding{
+	padding-left:2.5rem;
+	padding-left:2.5rem;
+}
+/* backgrounds */
+.bg-lightBlue{
+	background-color:#f3f8fe!important
+}
+.bg-white{
+	background-color:#fff!important;
+}
+
+/* Divs */
+.features-div{
+	border-radius:10px;
+	box-shadow: 0px 4px 15px rgba(5, 83, 200, 0.2);
+}
+.features-div-header{
+	font-size:2.25rem
+}
+.small-red-line{
+	width:20px!important;
+	height:5px;
+	border-radius:5px;
+	background-color: #F20000;
+}
+.small-white-line{
+	width:20px!important;
+	height:5px;
+	border-radius:5px;
+	background-color: #fff;
+}
+
+/* Everything about fonts */
+.welcomeText{
+	font-size:3rem;
+	color:#0553C8;
+}
+.welcome-p{
+	font-size:1rem;
+	color:#0553c8;
+	font-weight:400;
+}
+.banner-header{
+	font-size:3.5rem;
+	font-weight:700;
+	font-family:Comfortaa;
+}
+.banner-p{
+	font-size:1.3rem;
+}
+.get-started-header{
+	font-size:2rem;
+	color:#0553c8;
+	font-weight:700;
+}
+.get-started-header-sm{
+	font-size:1.5rem;
+	color:#3F3D56;
+	font-weight:700;
+
+}
+.get-started-p{
+	font-size:1.125rem;
+	color:#707070;
+}
+.why-header{
+	font-size:2.25rem;
+	color:#fff;
+}
+.why-sub-headers{
+	font-size:1.125rem;
+	color:#fff;
+	font-weight:700;
+}
+.why-p{
+	font-size:1rem;
+	color:#fff;
+	font-weight:400;
+}
+
+/* buttons */
+.btn-get-started{
+	background-color:#08B29B;
+	color:#fff;
+	border-radius:5px;
+	height:50px;
+	width:50%;
+}
+.btn-login{
+	border:1px solid #08B29B;
+	color:#08B29B!important;
+	border-radius:5px;
+}
+.btn-create-account{
+	color:#fff!important;
+	background-color: #08B29B;
+}
+
+/* Margins and Paddings */
+.mt-80{
+	margin-top:80px;
+}
+.mt-50{
+	margin-top:50px;
+}
+.mt-40{
+	margin-top:40px;
+}
+.py-80{
+	padding-top:80px;
+	padding-bottom:80px;
+}
+.w-100{
+	width:100%;
+}
+
+/* Footer */
+.footer-topDiv{
+	background-color:#FAFAFA;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11);
+	border-radius: 10px;
+}
+.footer-topDiv-header{
+	color:#3F3D56;
+	font-size:2.25rem;
+	font-weight:700;
+}
+.footer-topDiv-p{
+	color:#3F3D56;
+	font-size:1.125rem;
+	font-weight:700;
+}
+.footer-bottom-p{
+	font-size:1rem;
+	color:#0553c8;
+	font-weight:700;
+}
+.footer-bottom-header{
+	font-size:1.2rem;
+	color:#000000;
+	font-weight:700;
+}
+.footer-bottom-links{
+	font-size:1rem;
+	color:#000000;
+	font-weight:500;
+	text-decoration: none!important;
+}
+.copyright-text{
+	font-size:0.825rem;
+	color:#000000;
+	font-weight:500;
+}
+
+@media (max-width:768px){
+	.nav-menu-padding{
+		padding-left:0;
+		padding-right:0;
+	}
+	.nav-margin-top{
+		margin-top:1rem;
+	}
+	.features-div{
+		width:100%!important;
+	}
+	.mt-responsive{
+		margin-top:2.5rem;
+	}
+	.btn-get-started{
+		width:100%;
+	}
+	.banner-img2{
+		height:1600px;
+	}
+}
