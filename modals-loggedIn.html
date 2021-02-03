@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/Images/favicon.ico"><!-- CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Invest Yield</title>
+    
+    <!-- Head Libs -->
+    <style>
+         .modal-backdrop { background-color: #003079; }
+    </style>
+</head>
+
+
+<body>
+  <!--Header Top Navigation--> 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light nav-edit px-5 py-3">
+      <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item nav-menu-padding active">
+            <a class="nav-link menus text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-menu-padding">
+            <a class="nav-link menus text-dark" href="#">About us</a>
+          </li>
+          <li class="nav-item nav-menu-padding">
+            <a class="nav-link menus text-dark active" href="#">Contact us</a>
+          </li>
+          <li class="nav-item nav-menu-padding">
+            <a class="nav-link menus text-dark" href="#">FAQ</a>
+          </li>
+          <li class="nav-item nav-menu-padding nav-margin-top">
+            <button class="btn btn-login px-4 menus nav-link">Login</button>
+          </li>
+          <li class="nav-item nav-menu-padding nav-margin-top">
+            <button class="btn btn-create-account px-4 menus nav-link">Create an Account</button>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <!--End of Header Top Navigation-->
+<main>
+    <section class="">
+        <div class="container-fluid px-0">
+            <div class="col-lg-12 px-5">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div class="col-lg-5 px-0 mt-30">
+                        <div class="my-4">
+                            <div class="">
+                                <h5 class="getInTouch-header">Get in touch</h5>
+                                <p class="getInTouch-p">Fill up the form and our team will get back to you within 24 hours.</p>
+                            </div>
+                            <div class="mt-80">
+                                <div class="contactUs-div d-flex align-items-center px-4">
+                                    <div><img src="./assets/images/callIcon.svg" class="img-fluid" alt="Call"></div>
+                                    <div class="px-3 welcome-p">+234 123 70986</div>
+                                </div>
+                                <div class="contactUs-div d-flex align-items-center px-4 mt-5">
+                                    <div><img src="./assets/images/messageIcon.svg" class="img-fluid" alt="Mail"></div>
+                                    <div class="px-3 welcome-p">help@investyield.com</div>
+                                </div>
+                                <div class="contactUs-div d-flex align-items-center px-4 mt-5">
+                                    <div><img src="./assets/images/locationIcon.svg" class="img-fluid" alt="Location"></div>
+                                    <div class="px-3 welcome-p">32, Adeola Odeku, Victoria Island, Lagos, Nigeria.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 px-0">
+                            <div class="d-flex justify-content-between">
+                                <a href="#"><img src="./assets/images/facebookIcon.svg" class="img-fluid" alt="Facebook"></a>
+                                <a href="#"><img src="./assets/images/IGIcon.svg" class="img-fluid" alt="Instagram"></a>
+                                <a href="#"><img src="./assets/images/twitterIcon.svg" class="img-fluid" alt="Twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 px-0 mt-30">
+                        <div class="bg-white login-div px-5 py-3 shadow my-5">
+                            <div class="mt-4">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="text-field" placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" class="text-field" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <textarea class="p-3" id="textArea-ContactUs" placeholder="Message"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group mt-5">
+                                        <input type="submit" class="btn login-submit" value="SEND">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</main>
+ <footer>
+  <div class="container-fluid p-4">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="px-5 px-resp"><p class="loginpage-footer-p mb-0">2020  investYield. All Rights Reserved</p></div>
+        <div class="px-5 px-resp"><a href="#" class="loginpage-footer-p">Terms and Conditions</a></div>
+        <div class="px-5 px-resp"><a href="#" class="loginpage-footer-p">Privacy Policy</a></div>
+      </div>
+  </div>
+
+  <a href="#" class="btn" data-toggle="modal" data-target="#testModal">Modal test</a>
+</footer>
+
+<div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="know-better1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="p-4">
+                <h5 class="login-div-header">We want to know you better</h5>
+                <div class="small-red-line"></div>
+                <p class="mt-4">Please provide us with some extra important information for us to verify you and know you better.</p>
+                <div class="mt-4 d-flex justify-content-center">
+                    <img src="./assets/images/qa-img.svg" class="" alt="Quality Assurance">
+                </div>
+                <div class="mt-4">
+                    <button class="btn login-submit">CONTINUE</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="Know-better2">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="p-4">
+                <h5 class="login-div-header">We want to know you better</h5>
+                <div class="small-red-line"></div>
+                <p class="mt-5">Please provide us with some extra important information for us to verify you and know you better.</p>
+                <div class="form-group mt-3">
+                    <input type="text" class="text-field" placeholder="Enter BVN">
+                </div>
+                <div class="d-flex justify-content-center flex-column mt-5">
+                    <a href="#" class="d-flex no-decor bvn-text align-self-center">
+                        Why we need your BVN <span class="px-2"><i class="fas fa-arrow-down"></i></span>
+                    </a>
+                    <div class="p-3 bg-grey2 BVN-div mt-4">
+                        <p>BVN is required to validate your identity and protect you against identity theft. This also ensures another level of safety for your funds, transactions and unlock some features on the app</p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <button class="btn login-submit">CONTINUE</button>
+                </div>
+                <div class="mt-4 d-flex justify-content-center">
+                    <a href="#" class="text-green no-decor text-center">I’ll do this later</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="testModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="p-4">
+                <h5 class="login-div-header">We want to know you better</h5>
+                <div class="small-red-line"></div>
+                <h6 class="mt-60">Please enter the One-Time Password (OTP) that has been sent to the phone number <span class="reg-p-number"> +234705*****95.</span> linked with your BVN</h6>
+                <div class="form-group mt-4">
+                    <input type="text" class="text-field" placeholder="Enter OTP">
+                </div>
+                <div class="mt-5">
+                    <button class="btn login-submit">CONTINUE</button>
+                </div>
+                <div class="mt-5 d-flex flex-column">
+                    <p class="text-center weight-600">Did not get OTP?</p>
+                    <a href="#" class="text-green no-decor text-center mt-2">Resend OTP</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+</body>
+
+</html>
