@@ -3531,6 +3531,12 @@ a .au-card:hover {
     background-color: #fff;
     border: 1px solid #ddd;
 }
+.au-card-bg-shopping{
+    background-color: #FFEDF5;
+}
+.au-card-bg-family{
+    background-color: #FFF0E2;;
+}
 
 
 /* .au-card.au-card--bg-lightgold {
@@ -3539,6 +3545,12 @@ a .au-card:hover {
 
 .text-stash {
     color: #B80909;
+}
+.text-stash2{
+    color:#B80953;
+}
+.text-stash3{
+    color:#C57902;
 }
 
 .text-green {

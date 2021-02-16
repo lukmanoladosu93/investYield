@@ -147,6 +147,14 @@ a.nav-link.active{
 .contactUs-div{
 	background-color:#F3F8FE;
 	height: 50px;
+	font-size:1rem!important;
+}
+.contactUs-div2{
+	background-color:#ffffff;
+	height: 50px;
+	border:1px solid #DDDDDD;
+	color:#707070!important;
+	font-size:1rem!important;
 }
 .BVN-div{
 	border-radius:5px;
@@ -163,10 +171,28 @@ a.nav-link.active{
 	background-color:#08B29B;
 	border-radius:5px;
 }
+
+.referal-link-div{
+	height:60px;
+	border-radius:5px;
+	background-color: #F3F8FE;
+	color:#0553C8;
+	font-size:1.2rem;
+	font-weight:600;
+}
+.copy-referal-link{
+	height:60px;
+	background-color:#0553C8;
+	border-radius:0px 5px 5px 0px;
+}
+.share-referral-link{
+	height:60px;
+	border:1px solid #0553C8;
+	border-radius: 5px;
+}
 /* Everything about fonts */
 .welcomeText{
 	font-size:3rem;
-	color:#0553C8;
 }
 .welcome-p{
 	font-size:1rem;
@@ -277,6 +303,18 @@ a.nav-link.active{
 .join-now-text{
 	font-size:1.2rem;
 }
+.font-sm-sm{
+	font-size:0.625rem!important;
+}
+.font-sm{
+	font-size:0.825rem;
+}
+.font-rem1{
+	font-size:0.9rem;
+}
+.text-field::placeholder{
+	font-size:0.825rem!important;
+}
 
 /* Forms */
 .text-field{
@@ -354,6 +392,25 @@ a.nav-link.active{
 	width:100%;
 	border-radius:5px;
 }
+a.btn{
+	display: flex!important;
+	align-items: center!important;
+	justify-content: center!important;
+	word-wrap: normal;
+}
+.btn-cancel{
+	background-color:transparent;
+	color:#F20000;
+	width:100%;
+	font-weight:500;
+	height:50px;
+}
+.btn-previous{
+	background-color:transparent;
+	width:100%;
+	font-weight:500;
+	height:50px;
+}
 
 /* Margins and Paddings */
 .mt-80{
@@ -397,6 +454,21 @@ a.nav-link.active{
 .pp-custom{
 	padding: 6rem 3rem 6rem 3rem;
 }
+.min-height-180{
+	min-height: 180px!important;
+}
+.min-height-400{
+	min-height:400px;
+}
+.blue-border-left{
+	border-left:20px solid #0553C8;
+}
+.green-border-left{
+	border-left:20px solid #08B29B;
+}
+.yellow-border-left{
+	border-left:20px solid #FFC727;
+}
 
 /* Footer */
 .footer-topDiv{
@@ -420,7 +492,7 @@ a.nav-link.active{
 	font-weight:700;
 }
 .footer-bottom-header{
-	font-size:1.2rem;
+	font-size:1.1rem;
 	color:#000000;
 	font-weight:700;
 }
@@ -436,9 +508,74 @@ a.nav-link.active{
 	font-weight:500;
 }
 .text-fantastic{
-	font-size:3rem;
+	font-size:2.25rem;
 	color:#000000;
 }
+
+/* Rounded Switch */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #DDDDDD;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	left: 0;
+	right:0;
+	bottom: -2px;
+	background-color: #707070;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(35px);
+	-ms-transform: translateX(35px);
+	transform: translateX(35px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
 
 /* Pie chart */
 
