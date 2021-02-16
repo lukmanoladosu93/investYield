@@ -3726,9 +3726,13 @@ a .au-card:hover {
 }
 
 .au-message-list {
-    height: 424px;
+    height: auto;
     position: relative;
-    overflow-y: auto;
+}
+
+.recent-activities .au-message-list .au-message__item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .au-message-list.todolist .au-message__item:last-child {
