@@ -1562,6 +1562,10 @@ a.au-btn:hover {
   visibility: hidden;
 }
 
+.pay-method-radio input:checked ~ label span {
+  font-weight: bold !important;
+}
+
 .form-control {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
