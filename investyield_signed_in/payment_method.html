@@ -80,12 +80,18 @@
     <!-- Main CSS-->
     <link href="./assets/css/theme.css" rel="stylesheet" media="all" />
     <link href="../assets/css/style.css" rel="stylesheet" media="all" />
+
+    <style>
+      .modal-backdrop {
+        background-color: #003079;
+      }
+    </style>
   </head>
 
   <body class="animsition">
     <div class="page-wrapper">
       <!-- HEADER MOBILE-->
-      <header class="header-mobile d-block d-lg-none">
+      <header class="header-mobile">
         <div class="header-mobile__bar">
           <div class="container-fluid">
             <div class="header-mobile-inner">
@@ -209,7 +215,7 @@
       <!-- END HEADER MOBILE-->
 
       <!-- MENU SIDEBAR-->
-      <aside class="menu-sidebar d-none d-lg-block">
+      <aside class="menu-sidebar">
         <div class="logo">
           <a href="#">
             <img src="./assets/media/investyieldLogo.svg" alt="investYield" />
@@ -368,84 +374,96 @@
         <div class="main-content">
           <div class="section__content section__content--p30 pb-4">
             <div class="container-fluid">
-              <div class="row mt-4">
-                <div class="col-lg-6">
-                  <div class="au-card">
+              <div class="row rg-4 mt-4">
+                <div class="col-lg-6 col-md-6 d-flex flex-column">
+                  <div class="au-card px-0 flex-grow-1">
                     <div class="au-card-inner">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <canvas id="myChart" width="800" height="550">
-                          </canvas>
+                      <div class="px-4 px-lg-5">
+                        <h3 class="title-2 tm-b-5">Savings Breakdown</h3>
+                      </div>
+
+                      <div class="savings-breakdown p-4 px-lg-5">
+                        <div class="savings-breakdown-row text-black">
+                          <p>You are saving:</p>
+                          <p class="font-weight-bold">N5000 / daily</p>
+                        </div>
+
+                        <div class="savings-breakdown-row text-black">
+                          <p>Interest Rate</p>
+                          <p class="font-weight-bold">10% per annum</p>
+                        </div>
+
+                        <div class="savings-breakdown-row text-black">
+                          <p>Start Date</p>
+                          <p class="font-weight-bold">12 - February - 2021</p>
+                        </div>
+
+                        <div class="savings-breakdown-row text-black">
+                          <p>End Date:</p>
+                          <p class="font-weight-bold">12 - December - 2021</p>
+                        </div>
+
+                        <div class="savings-breakdown-row text-black">
+                          <p>Amount of Days:</p>
+                          <p class="font-weight-bold">303 Days</p>
+                        </div>
+
+                        <div class="savings-breakdown-row text-black">
+                          <p>Target Amount:</p>
+                          <p class="font-weight-bold">N1,515,000.00</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="au-card position-relative min-height-400 px-0">
+                <div class="col-lg-6 col-md-6 d-flex flex-column">
+                  <div class="au-card position-relative px-0 flex-grow-1">
                     <div class="au-card-inner">
-                      <div class="px-5">
-                        <h3 class="title-2 tm-b-5">
-                          Enter details for Transfer
-                        </h3>
+                      <div class="px-4 px-lg-5">
+                        <h3 class="title-2 tm-b-5">Select a payment method</h3>
                       </div>
-                      <div class="px-5 mt-5">
+                      <div class="px-4 px-lg-5 mt-5">
                         <form action="">
-                          <div class="form-group">
-                            <div>
-                              <div
-                                class="row justify-content-between align-items-end"
-                              >
-                                <label
-                                  for="Amount"
-                                  class="text-blue font-sm weight-500 col-lg-8"
-                                  >Who are you sending to?</label
-                                >
-                                <a
-                                  href="#"
-                                  class="col-lg-4 d-flex align-items-center justify-content-center font-sm btn btn-withdraw"
-                                  >Select Beneficiary</a
-                                >
-                              </div>
-                            </div>
-                            <input
-                              type="text"
-                              class="text-field mt-2"
-                              placeholder="Enter recipient’s email"
-                            />
-                          </div>
-                          <div class="form-group mt-4">
-                            <label
-                              for="Amount"
-                              class="text-blue font-sm weight-500"
-                              >How much would you like to send?</label
+                          <div class="pay-method-radio">
+                            <input id="radio1" name="radio" type="radio" />
+                            <label for="radio1"
+                              ><span>5366 **** **** **09</span></label
                             >
-                            <input
-                              type="text"
-                              class="text-field mt-2"
-                              placeholder="Amount (N)"
-                            />
                           </div>
-                          <div
-                            class="text-field mt-4 d-flex align-items-center justify-content-between"
-                          >
-                            <h6 class="weight-600 text-blue">
-                              Save beneficiary
-                            </h6>
-                            <label class="switch mb-0">
-                              <input type="checkbox" />
-                              <span class="slider round"></span>
-                            </label>
+                          <div class="pay-method-radio mt-4">
+                            <input id="radio2" name="radio" type="radio" />
+                            <label for="radio2"
+                              ><span>Pay with Stash</span></label
+                            >
+                          </div>
+                          <div class="pay-method-radio mt-4">
+                            <input id="radio3" name="radio" type="radio" />
+                            <label for="radio3"
+                              ><span>Pay with Bank Transfer</span></label
+                            >
                           </div>
 
-                          <div class="form-group mt-5">
-                            <a
-                              href="#"
-                              class="btn login-submit"
-                              data-toggle="modal"
-                              data-target="#confirmTransfer"
-                              >NEXT</a
-                            >
+                          <div class="form-group mt-4">
+                            <a href="#" class="au-btn-outline">Add a Card</a>
+                          </div>
+
+                          <div class="row justify-content-end">
+                            <div class="col-lg-8 mt-5">
+                              <div class="d-flex justify-content-between">
+                                <div class="col-lg-6 px-0">
+                                  <a
+                                    href="#"
+                                    class="au-btn iy-btn-secondary text-danger"
+                                    >Cancel</a
+                                  >
+                                </div>
+                                <div class="col-lg-6 px-0">
+                                  <a href="#" class="au-btn iy-btn-primary"
+                                    >NEXT</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </form>
                       </div>
@@ -466,43 +484,38 @@
         >
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-              <div class="modal-body p-0">
-                <div class="au-card">
-                  <div class="au-card-inner">
-                    <h4 class="text-blue weight-600 title-2">
-                      Confirm Transfer Funds
-                    </h4>
-                    <div class="mt-4">
-                      <p class="weight-600 text-blue">
-                        You are about to transfer:
-                      </p>
-                      <h5 class="text-dark weight-600">₦500,000.00</h5>
-                    </div>
+              <div class="modal-body">
+                <div class="p-5">
+                  <h4 class="text-blue weight-600">Confirm Transfer Funds</h4>
+                  <div class="small-red-line"></div>
+                  <div class="mt-4">
+                    <p class="weight-600 text-blue">
+                      You are about to transfer:
+                    </p>
+                    <h5 class="text-dark weight-600">₦500,000.00</h5>
+                  </div>
 
-                    <div class="mt-4">
-                      <p class="weight-600 text-blue">To recipient:</p>
-                      <h5 class="text-dark weight-600">
-                        isaac.Newton@gmail.com
-                      </h5>
-                    </div>
+                  <div class="mt-4">
+                    <p class="weight-600 text-blue">To recipient:</p>
+                    <h5 class="text-dark weight-600">isaac.Newton@gmail.com</h5>
+                  </div>
 
-                    <div class="mt-4">
-                      <p class="weight-600 text-blue">Name of recipient:</p>
-                      <h5 class="text-dark weight-600">Isaac Newton</h5>
-                    </div>
+                  <div class="mt-4">
+                    <p class="weight-600 text-blue">Name of recipient:</p>
+                    <h5 class="text-dark weight-600">Isaac Newton</h5>
+                  </div>
 
-                    <div class="form-group mt-5">
-                      <a href="#" class="btn login-submit">TRANSFER</a>
-                    </div>
+                  <div class="form-group mt-5">
+                    <a href="#" class="btn login-submit">TRANSFER</a>
+                  </div>
 
-                    <div class="mt-4 d-flex justify-content-center">
-                      <a
-                        href="#"
-                        class="text-danger weight-500"
-                        data-dismiss="modal"
-                        >CANCEL</a
-                      >
-                    </div>
+                  <div class="mt-4 d-flex justify-content-center">
+                    <a
+                      href="#"
+                      class="text-danger weight-500"
+                      data-dismiss="modal"
+                      >CANCEL</a
+                    >
                   </div>
                 </div>
               </div>
