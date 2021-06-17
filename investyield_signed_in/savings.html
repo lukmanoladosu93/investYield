@@ -10,11 +10,12 @@
     <meta name="keywords" content="investyield, savings, investment, financial savings, investment opportunities">
 
     <!-- Title Page-->
-    <title>My Profile</title>
+    <title>Withdraw Funds</title>
 
     <!-- Fontfaces CSS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- <link href="./assets/css/font-face.css" rel="stylesheet" media="all"> -->
     <link href="./assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="./assets/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
@@ -172,7 +173,7 @@
                             <a class="js-arrow" href="#">
                                 <i data-feather="home" class="mr-3"></i>Home</a>
                         </li>
-                        <li class="has-sub mb-3">
+                        <li class="active has-sub mb-3">
                             <a class="js-arrow" href="#">
                                 <i data-feather="shield" class="mr-3"></i>Savings</a>
                         </li>
@@ -184,7 +185,7 @@
                             <a class="js-arrow" href="#">
                                 <i data-feather="file" class="mr-3"></i>Blog</a>
                         </li>
-                        <li class="active has-sub mb-3">
+                        <li class="has-sub mb-3">
                             <a class="js-arrow" href="myProfile.html">
                                 <i data-feather="user" class="mr-3"></i>Account</a>
                         </li>
@@ -302,22 +303,22 @@
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
-                <div class="section__content section__content--p30 py-4">
+                <div class="section__content section__content--p30 pb-4">
                     <div class="container-fluid">
-                        <div class="row"> 
+                        <div class="row">
                             <div class="col-lg-12">
                                 <div class="mt-4">
                                     <div class="d-flex flex-wrap justify-content-between">
                                         <div class="col-lg-3 px-0">
-                                            <h5 class="get-started-header">My Profile</h5>
+                                            <h5 class="get-started-header">Savings</h5>
                                             <div class="small-red-line"></div>
-                                            <p class="text-blue mt-3">My Portfolio</p>
+                                            <p class="text-blue mt-3">Savings</p>
                                         </div>
                                         <div class="col-lg-7 px-0 d-flex justify-content-end flex-wrap">
-                                           <div class="col-lg-5 mt-2">
-                                               <button class="btn btn-transfer">Transfer Funds</button>
-                                           </div>
-                                           <div class="col-lg-5 mt-2">
+                                            <div class="col-lg-5 mt-2">
+                                                <button class="btn btn-transfer">Transfer Funds</button>
+                                            </div>
+                                            <div class="col-lg-5 mt-2">
                                                 <button class="btn btn-withdraw">Withdraw Funds</button>
                                             </div>
                                         </div>
@@ -332,7 +333,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">
                                                 <canvas id="myChart" width="800" height="550">
-                                                    
+
                                                 </canvas>
                                             </div>
                                         </div>
@@ -354,7 +355,9 @@
                                                             <div class="container h-100">
                                                                 <div class="row h-100 py-3 mb-4">
                                                                     <div class="au-message-list w-100 todolist mt-4">
-                                                                        <img src="./assets/images/savingschallenge.svg" class="img-fluid w-100" alt="join a savings challenge">
+                                                                        <img src="./assets/images/savingschallenge.svg"
+                                                                            class="img-fluid w-100"
+                                                                            alt="join a savings challenge">
 
                                                                     </div>
                                                                     <!-- .col -->
@@ -373,7 +376,9 @@
                                                             <div class="container h-100">
                                                                 <div class="row h-100 py-3 mb-4">
                                                                     <div class="au-message-list w-100 todolist mt-4">
-                                                                        <img src="./assets/images/savingschallenge.svg" class="img-fluid w-100" alt="join a savings challenge">
+                                                                        <img src="./assets/images/savingschallenge.svg"
+                                                                            class="img-fluid w-100"
+                                                                            alt="join a savings challenge">
 
                                                                     </div>
                                                                     <!-- .col -->
@@ -392,7 +397,7 @@
                                             </div>
                                             <div class="d-flex">
                                                 <div class="swiper-button-next"></div>
-                                                <div class="swiper-button-prev"></div>  
+                                                <div class="swiper-button-prev"></div>
                                             </div>
 
 
@@ -402,72 +407,222 @@
                             </div>
                         </div>
                         <div class="row mt-4">
-                            <a class="col-xl-2 col-lg-4">
-                                <div class="au-card min-height-180 px-2">
+                            <div class="col-lg-12">
+                                <div class="au-card">
                                     <div class="au-card-inner">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="./assets/images/userIcon.svg" class="img-fluid" alt="">
-                                            <p class="text-dark text-center mt-3">My Account Settings</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="title-2">Choose a savings option</div>
+                                            <a class="au-btn-link">View more</a>
+                                        </div>
+                        
+                                        <div class="row mt-4">
+                                            <a class="col-xl-4 col-lg-4 col-md-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-retirement flex-grow-1 px-3">
+                                                    <img src="./assets/images/foodTrayIcon.svg" alt="Food Tray" />
+                                                    <h5 class="text-green">Food</h5>
+                                                    <div class="mt-3">
+                                                        <h5 class="text-green mb-0">₦5,048.24</h5>
+                                                        <p class="font-sm-sm mt-2">Available balance</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-4 col-lg-4 col-md-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-homeplan flex-grow-1 px-3">
+                                                    <img src="./assets/images/TGIFIcon.svg" alt="TGIF" />
+                                                    <p class="text-blue">TGIF</p>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-4 col-lg-4 col-md-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-emergency flex-grow-1 px-3">
+                                                    <img src="./assets/images/dinnerDateIcon.svg" alt="Dinner Date" />
+                                                    <p class="text-stash">Dinner date</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a class="col-xl-2 col-lg-4">
-                                <div class="au-card min-height-180 px-2">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-12">
+                                <div class="au-card">
                                     <div class="au-card-inner">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="./assets/images/supportIcon.svg" class="img-fluid" alt="">
-                                            <p class="text-dark text-center mt-3">Support</p>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="title-2">Stash</div>
+                                            <a class="au-btn-link">View more</a>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <a class="col-xl-2 col-lg-3 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-retirement flex-grow-1 px-3">
+                                                    <img src="./assets/images/foodTrayIcon.svg" alt="Food Tray" />
+                                                    <h5 class="text-green">Food</h5>
+                                                    <div class="mt-3">
+                                                        <h5 class="text-green mb-0">₦5,048.24</h5>
+                                                        <p class="font-sm-sm mt-2">Available balance</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-2 col-lg-3 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-homeplan flex-grow-1 px-3">
+                                                    <img src="./assets/images/TGIFIcon.svg" alt="TGIF" />
+                                                    <p class="text-blue">TGIF</p>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-2 col-lg-3 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-emergency flex-grow-1 px-3">
+                                                    <img src="./assets/images/dinnerDateIcon.svg" alt="Dinner Date" />
+                                                    <p class="text-stash">Dinner date</p>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-2 col-lg-3 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-shopping flex-grow-1 px-3">
+                                                    <img src="./assets/images/shoppingIcon.svg" alt="Shopping" />
+                                                    <p class="text-stash2">Shopping</p>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-2 col-lg-3 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-retirement flex-grow-1 px-3">
+                                                    <img src="./assets/images/familyIcon.svg" alt="Family" />
+                                                    <p class="text-green">Family</p>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-2 col-lg-3 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="au-card-smaller au-card-bg-family flex-grow-1 px-3">
+                                                    <img src="./assets/images/entertainmentIcon.svg"
+                                                        alt="Entertainment" />
+                                                    <p class="text-stash3">Entertainment</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a class="col-xl-2 col-lg-4">
-                                <div class="au-card min-height-180 px-2">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-12">
+                                <div class="au-card">
                                     <div class="au-card-inner">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="./assets/images/cardSettingsIcon.svg" class="img-fluid" alt="">
-                                            <p class="text-dark text-center mt-3">My Card and Bank Settings</p>
+                                        <div class="d-flex">
+                                            <h3 class="title-2">Core Savings</h3>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <a class="col-xl-4 col-lg-4 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="team-div shadow d-flex flex-column">
+                                                    <div>
+                                                        <img src="./assets/images/homeImg.png" class="img-fluid w-100"
+                                                            alt="Team member pic">
+                                                    </div>
+                                                    <div class="p-4 bg-white detail-div">
+                                                        <div class="">
+                                                            <h5 class="text-blue weight-600">Raymond Rent 1</h5>
+                                                            <div class="saving-progress mt-3">
+                                                                <div class="saving-progress-actual"></div>
+                                                            </div>
+                                                            <div class="mt-3">
+                                                                <h5 class="text-green">₦5,024.12 <span
+                                                                        class="text-blue"> / ₦1,000,000</span></h5>
+                                                                <p class="font-sm-sm mt-2">Savings balance</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-4 col-lg-4 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="team-div shadow d-flex flex-column">
+                                                    <div>
+                                                        <img src="./assets/images/homeImg.png" class="img-fluid w-100"
+                                                            alt="Team member pic">
+                                                    </div>
+                                                    <div class="p-4 bg-white detail-div">
+                                                        <div class="">
+                                                            <h5 class="text-blue weight-600">Raymond Vacation 1</h5>
+                                                            <div class="saving-progress mt-3">
+                                                                <div class="saving-progress-actual"></div>
+                                                            </div>
+                                                            <div class="mt-3">
+                                                                <h5 class="text-green">₦5,024.12 <span
+                                                                        class="text-blue"> / ₦1,000,000</span></h5>
+                                                                <p class="font-sm-sm mt-2">Savings balance</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="col-xl-4 col-lg-4 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="team-div shadow d-flex flex-column">
+                                                    <div>
+                                                        <img src="./assets/images/homeImg.png" class="img-fluid w-100"
+                                                            alt="Team member pic">
+                                                    </div>
+                                                    <div class="p-4 bg-white detail-div">
+                                                        <div class="">
+                                                            <h5 class="text-blue weight-600">Raymond Rent 1</h5>
+                                                            <div class="saving-progress mt-3">
+                                                                <div class="saving-progress-actual"></div>
+                                                            </div>
+                                                            <div class="mt-3">
+                                                                <h5 class="text-green">₦5,024.12 <span
+                                                                        class="text-blue"> / ₦1,000,000</span></h5>
+                                                                <p class="font-sm-sm mt-2">Savings balance</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="au-card-inner mt-4">
+                                        <div class="d-flex">
+                                            <h3 class="title-2">Group Savings</h3>
+                                        </div>
+
+                                        <div class="row mt-4">
+                                            <a class="col-xl-4 col-lg-4 col-md-6 col-6 d-flex flex-column mb-4">
+                                                <div class="team-div shadow d-flex flex-column">
+                                                    <div>
+                                                        <img src="./assets/images/homeImg.png" class="img-fluid w-100"
+                                                            alt="Team member pic">
+                                                    </div>
+                                                    <div class="p-4 bg-white detail-div">
+                                                        <div class="">
+                                                            <h5 class="text-blue weight-600">Abuja Hikers</h5>
+                                                            <div class="saving-progress mt-3">
+                                                                <div class="saving-progress-actual"></div>
+                                                            </div>
+                                                            <div class="mt-3">
+                                                                <h5 class="text-green">₦5,024.12 <span
+                                                                        class="text-blue"> / ₦1,000,000</span></h5>
+                                                                <p class="font-sm-sm mt-2">Savings balance</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a class="col-xl-2 col-lg-4">
-                                <div class="au-card min-height-180 px-2">
-                                    <div class="au-card-inner">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="./assets/images/referIcon.svg" class="img-fluid" alt="">
-                                            <p class="text-dark text-center mt-3">Refer and Earn</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="col-xl-2 col-lg-4">
-                                <div class="au-card min-height-180 px-2">
-                                    <div class="au-card-inner">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="./assets/images/mgBeneficiariesIcon.svg" class="img-fluid" alt="">
-                                            <p class="text-dark text-center mt-3">Manage Beneficiaries</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="col-xl-2 col-lg-4">
-                                <div class="au-card min-height-180 px-2">
-                                    <div class="au-card-inner">
-                                        <div class="d-flex flex-column align-items-center">
-                                            <img src="./assets/images/securityIcon.svg" class="img-fluid" alt="">
-                                            <p class="text-dark text-center mt-3">My Security Settings</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
+            <footer>
+                <div class="container-fluid p-4">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="px-5 px-resp">
+                            <p class="loginpage-footer-p mb-0">2020 investYield. All Rights Reserved</p>
+                        </div>
+                        <div class="px-5 px-resp"><a href="#" class="loginpage-footer-p">Terms and Conditions</a></div>
+                        <div class="px-5 px-resp"><a href="#" class="loginpage-footer-p">Privacy Policy</a></div>
+                        <div class="px-5 px-resp"><a href="#" class="loginpage-footer-p">Support</a></div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
     </div>
@@ -508,22 +663,22 @@
         var myChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-            datasets: [{
-            label: '# of Tomatoes',
-            data: [3, 19,],
-            backgroundColor: [
-                '#0553C8',
-                '#08B29B'
-            ]
-        }]
-    },
+                datasets: [{
+                    label: '# of Tomatoes',
+                    data: [3, 19,],
+                    backgroundColor: [
+                        '#0553C8',
+                        '#08B29B'
+                    ]
+                }]
+            },
             options: {
-            responsive: true,
-            scales: {
+                responsive: true,
+                scales: {
 
-        }
-    }
-});
+                }
+            }
+        });
     </script>
 
 </body>

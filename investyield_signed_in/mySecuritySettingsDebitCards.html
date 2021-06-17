@@ -14,7 +14,8 @@
 
     <!-- Fontfaces CSS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- <link href="./assets/css/font-face.css" rel="stylesheet" media="all"> -->
     <link href="./assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="./assets/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
@@ -310,20 +311,20 @@
                                 <div class="small-red-line mt-3"></div>
                             </div>
                         </div>
-                        <div class="row"> 
+                        <div class="row">
                             <div class="col-lg-12">
                                 <div class="mt-4">
                                     <div class="d-flex flex-wrap justify-content-between">
                                         <div class="col-lg-3 px-0">
-                                            <p class="text-blue mt-3">My Portfolio / Profile Settings</p>
+                                            <p class="text-blue mt-3">My Portfolio / Security Settings</p>
                                         </div>
                                         <div class="col-lg-7 px-0 d-flex justify-content-end flex-wrap">
                                             <div class="col-lg-5 mt-2">
-                                               <button class="btn btn-transfer">Transfer Funds</button>
+                                                <button class="btn btn-transfer">Transfer Funds</button>
                                             </div>
                                             <div class="col-lg-5 mt-2">
                                                 <button class="btn btn-withdraw">Withdraw Funds</button>
-                                             </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -335,140 +336,226 @@
                                     <div class="au-card-inner">
                                         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                             <li class="nav-item" role="presentation">
-                                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                                                <button class="nav-link active" id="pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                    role="tab" aria-controls="pills-home" aria-selected="true">My Debit Cards<button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                                    aria-controls="pills-profile" aria-selected="false">Change
+                                                    Pin</button>
                                             </li>
-                                          </ul>
-                                          <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                                <form action="">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="col-lg-6">
-                                                            <div class="d-flex justify-content-center align-items-center">
-                                                                <div>
-                                                                    <input type="file" class="d-none" id="fileUpload">
-                                                                    <a href="#" id="openFileUpload"><img src="./assets/images/uploadImg.svg" class="img-fluid"
-                                                                            alt="Upload Image"><span>Tap to edit profile picture</span></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-6">
+                                                        <button class="btn login-submit">Add New Card</button>
                                                     </div>
-                                                    <div class="row mt-5">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Your Full Name</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="Akanni" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">First Name</label>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-6 mt-4">
+                                                        <div class="debit-card-div py-5 px-4 position-relative">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-9">
+                                                                    <div class="row align-items-center flex-wrap">
+                                                                        <div class="col-lg-4">
+                                                                            <div class="d-flex">
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="d-flex">
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 d-flex text-light">
+                                                                            <div class="weight-600">9</div>
+                                                                            <div class="weight-600">9</div>
+                                                                            <div class="weight-600">6</div>
+                                                                            <div class="weight-600">3</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <p class="text-light">Mastercard <span class="mx-2">03 / 23</span></p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="Adewale" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Last Name</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Contact Details</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="raymond.adewole@gmail.com" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Email Address</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="07053214569" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Phone Number</label>
+                                                                <div class="col-lg-3">
+                                                                    <div class="d-flex justify-content-center">
+                                                                        <img src="./assets/images/check-circle1.svg" class="img-fluid" alt="Card">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Date of birth and Residential
-                                                            details</h5>
+                                                        <div class="mt-3">
+                                                            <button class="btn btn-delete-card text-danger">Delete Card</button>
                                                         </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="12 / 12 / 1988" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Date of birth (dd / mm / yyyy)</label>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 mt-4">
+                                                        <div class="debit-card-div py-5 px-4 position-relative">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-9">
+                                                                    <div class="row align-items-center flex-wrap">
+                                                                        <div class="col-lg-4">
+                                                                            <div class="d-flex">
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="d-flex">
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 d-flex text-light">
+                                                                            <div class="weight-600">9</div>
+                                                                            <div class="weight-600">9</div>
+                                                                            <div class="weight-600">6</div>
+                                                                            <div class="weight-600">3</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <p class="text-light">Mastercard <span class="mx-2">03 / 23</span></p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <div class="custom-select text-field-profile p-0">
-                                                                            <select class="text-field px-0">
-                                                                                <option value="0">State of residence</option>
-                                                                            </select>
+                                                                <div class="col-lg-3">
+                                                                    <div class="d-flex justify-content-center">
+                                                                        <img src="./assets/images/check-circle1.svg" class="img-fluid" alt="Card">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <button class="btn btn-delete-card text-danger">Delete Card</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-6 mt-4">
+                                                        <div class="debit-card-div py-5 px-4 position-relative">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-9">
+                                                                    <div class="row align-items-center flex-wrap">
+                                                                        <div class="col-lg-4">
+                                                                            <div class="d-flex">
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="d-flex">
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                                <div class="white-circle"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 d-flex text-light">
+                                                                            <div class="weight-600">9</div>
+                                                                            <div class="weight-600">9</div>
+                                                                            <div class="weight-600">6</div>
+                                                                            <div class="weight-600">3</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-2">
+                                                                        <p class="text-light">Mastercard <span class="mx-2">03 / 23</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3">
+                                                                    <div class="d-flex justify-content-center">
+                                                                        <img src="./assets/images/check-circle1.svg" class="img-fluid" alt="Card">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <button class="btn btn-delete-card text-danger">Delete Card</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-xl-6 col-lg-8 mt-4">
+                                                        <div class="debit-card-withdrawal-div py-5 px-5 position-relative">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-8">
+                                                                    <h3 class="text-light">Raymond Adewale</h3>
+                                                                    <h3 class="text-light mt-3">0025463269</h3>
+                                                                    <h3 class="text-light mt-3">Access Bank</h3>
+                                                                </div>
+                                                                <div class="col-lg-4">
+                                                                    <div class="d-flex justify-content-center">
+                                                                        <img src="./assets/images/check-circle-big.svg" class="img-fluid" alt="Card">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="mt-3">
+                                                                    <button class="btn login-submit">Update Account</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="mt-3">
+                                                                    <button class="btn btn-delete-card text-danger">Delete Account</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row justify-content-center mt-5">
+                                                    <div class="col-lg-7">
+                                                        <div>
+                                                            <h6 class="text-dark">Please enter an account number linked with the BVN provided for this investYield
+                                                                account.</h6>
+                                                            <form class="mt-4">
+                                                                <div class="form-group">
+                                                                    <div class="custom-select text-field-profile p-0">
+                                                                        <select class="text-field px-0">
+                                                                            <option value="0">Select Bank</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group mt-4">
+                                                                    <input type="text" class="text-field" placeholder="Enter Account Number">
+                                                                </div>
+                                                                <div class="form-group mt-4">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-6">
+                                                                            <div class="mt-3">
+                                                                                <button class="btn btn-delete-card text-danger">CANCEL</button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6">
+                                                                            <div class="mt-3">
+                                                                                <button class="btn login-submit">ADD ACCOUNT</button>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="mt-3">
-                                                                <textarea class="textAreaProfile" placeholder="Residential Address"></textarea>
-                                                            </div>
+                                                            </form>
                                                         </div>
                                                     </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Upload a valid means of identification (international passport, voters card, drivers license, NIN).</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="file" class="d-none" id="fileUpload">
-                                                                        <a href="#" id="openFileUpload" class="upload-field-profile d-flex justify-content-between align-items-center"><h6 class="mb-0">Upload a means of identification</h6><img src="./assets/images/upload-cloud1.svg" class="img-fluid" alt="Upload Image"></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Please enter your password for security purpose</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group">
-                                                                        <input type="password" class="text-field-profile2" placeholder="Password">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4 justify-content-end">
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group">
-                                                                        <button class="btn login-submit">UPDATE PROFILE</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -10,11 +10,12 @@
     <meta name="keywords" content="investyield, savings, investment, financial savings, investment opportunities">
 
     <!-- Title Page-->
-    <title>My Profile</title>
+    <title>Savings</title>
 
     <!-- Fontfaces CSS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- <link href="./assets/css/font-face.css" rel="stylesheet" media="all"> -->
     <link href="./assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="./assets/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
@@ -35,6 +36,7 @@
 
     <!-- Main CSS-->
     <link href="./assets/css/theme.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./assets/css/checkBox.css">
     <link href="../assets/css/style.css" rel="stylesheet" media="all">
 
 </head>
@@ -172,7 +174,7 @@
                             <a class="js-arrow" href="#">
                                 <i data-feather="home" class="mr-3"></i>Home</a>
                         </li>
-                        <li class="has-sub mb-3">
+                        <li class="active has-sub mb-3">
                             <a class="js-arrow" href="#">
                                 <i data-feather="shield" class="mr-3"></i>Savings</a>
                         </li>
@@ -184,7 +186,7 @@
                             <a class="js-arrow" href="#">
                                 <i data-feather="file" class="mr-3"></i>Blog</a>
                         </li>
-                        <li class="active has-sub mb-3">
+                        <li class="has-sub mb-3">
                             <a class="js-arrow" href="myProfile.html">
                                 <i data-feather="user" class="mr-3"></i>Account</a>
                         </li>
@@ -304,171 +306,62 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="row mt-50">
                             <div class="col-lg-12">
-                                <h5 class="get-started-header title-2">My Portfolio</h5>
-                                <div class="small-red-line mt-3"></div>
-                            </div>
-                        </div>
-                        <div class="row"> 
-                            <div class="col-lg-12">
-                                <div class="mt-4">
-                                    <div class="d-flex flex-wrap justify-content-between">
-                                        <div class="col-lg-3 px-0">
-                                            <p class="text-blue mt-3">My Portfolio / Profile Settings</p>
-                                        </div>
-                                        <div class="col-lg-7 px-0 d-flex justify-content-end flex-wrap">
-                                            <div class="col-lg-5 mt-2">
-                                               <button class="btn btn-transfer">Transfer Funds</button>
-                                            </div>
-                                            <div class="col-lg-5 mt-2">
-                                                <button class="btn btn-withdraw">Withdraw Funds</button>
-                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-lg-12">
-                                <div class="au-card h-100">
-                                    <div class="au-card-inner">
-                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                                            </li>
-                                          </ul>
-                                          <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                                <form action="">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="col-lg-6">
-                                                            <div class="d-flex justify-content-center align-items-center">
-                                                                <div>
-                                                                    <input type="file" class="d-none" id="fileUpload">
-                                                                    <a href="#" id="openFileUpload"><img src="./assets/images/uploadImg.svg" class="img-fluid"
-                                                                            alt="Upload Image"><span>Tap to edit profile picture</span></a>
+                                <div class="d-flex justify-content-center">
+                                    <div class="col-xl-6 col-lg-8">
+                                        <div class="au-card">
+                                            <div class="au-card-inner">
+                                                <h4 class="text-blue">Let’s help you save for a new home or rent</h4>
+                                                <div class="small-red-line"></div>
+
+                                                <div class="mt-5">
+                                                    <form action="">
+                                                        <div class="mt-4">
+                                                            <div class="">
+                                                                <label class="text-blue weight-500">What type of group is this?</label>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="interval" class="styled-checkbox" id="styled-checkbox-1" type="checkbox"
+                                                                        value="value1">
+                                                                    <label for="styled-checkbox-1">Public Group</label>
+                                                                </div>
+                                                                <div class="form-group mt-1">
+                                                                    <input type="checkbox" name="interval" class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
+                                                                        value="value2">
+                                                                    <label for="styled-checkbox-2">Private Group</label>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-5">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Your Full Name</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="Akanni" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">First Name</label>
-                                                                    </div>
+                                                            <div class="form-group mt-4">
+                                                                <label class="text-blue">Start your group with a befitting name</label>
+                                                                    <input type="text" class="text-field"
+                                                                        placeholder="Group name">
+                                                            </div>
+                                                            <div class="">
+                                                                <label class="text-blue weight-500">What currency would
+                                                                    you like to save in?</label>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="interval" class="styled-checkbox" id="styled-checkbox-1" type="checkbox"
+                                                                        value="value1">
+                                                                    <label for="styled-checkbox-1">$ US Dollars</label>
                                                                 </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="Adewale" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Last Name</label>
-                                                                    </div>
+                                                                <div class="form-group mt-1">
+                                                                    <input type="checkbox" name="interval" class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
+                                                                        value="value2">
+                                                                    <label for="styled-checkbox-2">₦ Naira</label>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Contact Details</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="raymond.adewole@gmail.com" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Email Address</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="07053214569" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Phone Number</label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Date of birth and Residential
-                                                            details</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="text" class="text-field-profile" value="12 / 12 / 1988" disabled>
-                                                                        <label for="firstName" class="font-sm position-absolute" style="left:15px; top:15%;">Date of birth (dd / mm / yyyy)</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="form-group">
-                                                                        <div class="custom-select text-field-profile p-0">
-                                                                            <select class="text-field px-0">
-                                                                                <option value="0">State of residence</option>
-                                                                            </select>
+                                                            <div class="row mt-4 align-items-center justify-content-end">
+                                                                <div class="col-lg-4">
+                                                                        <div class="">
+                                                                            <button class="btn login-submit">NEXT</button>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mt-3">
-                                                                <textarea class="textAreaProfile" placeholder="Residential Address"></textarea>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Upload a valid means of identification (international passport, voters card, drivers license, NIN).</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group position-relative">
-                                                                        <input type="file" class="d-none" id="fileUpload">
-                                                                        <a href="#" id="openFileUpload" class="upload-field-profile d-flex justify-content-between align-items-center"><h6 class="mb-0">Upload a means of identification</h6><img src="./assets/images/upload-cloud1.svg" class="img-fluid" alt="Upload Image"></a>
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row mt-4">
-                                                        <div class="col-lg-3">
-                                                            <h5 class="mb-0 text-blue">Please enter your password for security purpose</h5>
-                                                        </div>
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group">
-                                                                        <input type="password" class="text-field-profile2" placeholder="Password">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-4 justify-content-end">
-                                                        <div class="col-lg-9">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="form-group">
-                                                                        <button class="btn login-submit">UPDATE PROFILE</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -513,9 +406,6 @@
 
     <script>
         feather.replace()
-    </script>
-    <script>
-        $('#openFileUpload').click(function () { $('#fileUpload').trigger('click'); });
     </script>
 
 </body>

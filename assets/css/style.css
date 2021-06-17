@@ -382,7 +382,20 @@ a.nav-link.active {
   color: #000000;
   text-decoration: none !important;
 }
-
+.btn-transfer {
+  background-color: #f3f8fe;
+  color: #0553c8;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+}
+.btn-withdraw {
+  background-color: #edfffd;
+  color: #08b29b;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+}
 a.btn {
   display: flex !important;
   align-items: center !important;
@@ -502,6 +515,16 @@ a.btn {
   font-size: 2.25rem;
   color: #000000;
 }
+.light-green-div {
+  background-color: #edfffd;
+}
+.light-green-div tr > td {
+  color: #08b29b !important;
+  border-top: none !important;
+}
+.no-border-top {
+  border-top: none !important;
+}
 
 /* Rounded Switch */
 /* The switch - the box around the slider */
@@ -566,6 +589,82 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Custom Checkboxes */
+
+.payment-selection {
+  display: grid;
+  grid-row-gap: 15px;
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.payment-selection .option {
+  background: #fff;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 15px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+
+.payment-selection .option .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+
+.payment-selection .option .dot::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2,
+#option-3:checked:checked ~ .option-3 {
+  border-color: #0069d9;
+  background: linear-gradient(267.72deg, #08b29b -6.36%, #0553c8 118.2%);
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot,
+#option-3:checked:checked ~ .option-3 .dot {
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before,
+#option-3:checked:checked ~ .option-3 .dot::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span {
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span,
+#option-3:checked:checked ~ .option-3 span {
+  color: #fff;
 }
 
 /* Pie chart */
