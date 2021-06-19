@@ -4,26 +4,112 @@ body {
   font-family: Comfortaa !important;
 }
 a.nav-link.active {
-  color: #0553c8 !important;
-  border-bottom: 2px solid #0553c8;
+  color: #08B29B !important;
+  border-bottom: 2px solid #08B29B;
 }
-
-.banner-img {
-  min-height: 650px;
+.nav-edit{
+  box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.39);
+}
+.section-custom-height{
+  height:1350px;
+}
+.reg-section{
+  height:83vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.reg-section-pin{
+  height:90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.div-shaped{
+  bottom:0;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #FAFAFA;
+}
+.login-bg{
+  height: 100vh;
   width: 100%;
   position: relative;
   background-size: cover;
   background-position: 70% 30%;
-  background-image: url("../images/homePageBgImg.png");
+  background-image: url("../images/login-bg.png");
 }
-.banner-img2 {
-  height: 750px;
+.logo-custom-size1{
+  height:50px;
+  width:300px;
+}
+.login-bg-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(221, 221, 221, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.fantastic-img {
+  height: 100vh;
   width: 100%;
   position: relative;
   background-size: cover;
   background-position: 70% 30%;
   background-image: url("../images/whyInvestImg.png");
 }
+.fantastic-overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(5, 83, 200, 0.94);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.banner-img2 {
+  height: 850px;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: 70% 30%;
+  background-image: url("../images/whyInvestImg.png");
+}
+@media (max-width:350px) {
+  .banner-img2{
+    height:1850px!important;
+  }
+}
+@media (max-width:1000px) {
+  .div-shaped{
+    position:relative!important;
+    clip-path: unset!important;
+  }
+  .section-custom-height{
+    height: auto!important;
+  }
+  .m-custom-sm{
+    margin-top:50px!important;
+    margin-bottom:50px!important;
+  }
+}
+
+@media (max-width:991px) {
+  .mt-resp-sm{
+    margin-top:20px!important;
+  }
+}
+
+
 .overlay {
   position: absolute;
   height: 100%;
@@ -66,7 +152,7 @@ a.nav-link.active {
 }
 /* backgrounds */
 .bg-lightBlue {
-  background-color: #f3f8fe !important;
+  background-color: #F5F7F7 !important;
 }
 .bg-white {
   background-color: #fff !important;
@@ -142,10 +228,10 @@ a.nav-link.active {
 }
 .otp-verified-text {
   color: #08b29b;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 .agree-text {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 .contactUs-div {
@@ -196,15 +282,55 @@ a.nav-link.active {
 }
 /* Everything about fonts */
 .welcomeText {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 .welcome-p {
   font-size: 1rem;
   color: #0553c8;
   font-weight: 400;
 }
-.banner-header {
-  font-size: 3.5rem;
+.save-div{
+  background-color: rgba(5, 83, 200, 0.06);
+  width:100%;
+  border-radius:5px;
+  padding:20px;
+  min-height: 180px;
+}
+.invest-div{
+  background-color:rgba(8, 178, 155, 0.06);
+  width:100%;
+  border-radius:5px;
+  padding:20px;
+  min-height: 230px;
+}
+.myPurse-div{
+  background-color: rgba(255, 199, 39, 0.4);
+  width:100%;
+  border-radius:5px;
+  padding:20px;
+  min-height:230px;
+}
+.earnInterest-div{
+  background-color: rgba(255, 195, 189, 0.3);
+  width:100%;
+  border-radius:5px;
+  padding:20px;
+  min-height: 180px;
+}
+.save-div, .invest-div, .myPurse-div, .earnInterest-div p{
+  font-size:0.825rem;
+}
+.save-div-header, .invest-div-header, .earnInterest-header, .myPurse-div-header{
+  font-size:1.5rem;
+}
+.text-brown{
+  color:#B80909;
+}
+.text-earn-red{
+ color:#F20000;
+}
+.landing-page-header {
+  font-size: 2.6rem;
   font-weight: 700;
   font-family: Comfortaa;
 }
@@ -212,18 +338,25 @@ a.nav-link.active {
   font-size: 1.3rem;
 }
 .get-started-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #0553c8;
   font-weight: 700;
 }
+.get-started-numbers{
+  font-size:1.125rem;
+}
 .get-started-header-sm {
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #3f3d56;
   font-weight: 700;
 }
 .get-started-p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #707070;
+}
+.get-started-info-div{
+  background-color:#FAFAFA;
+  border-radius:5px;
 }
 .why-header {
   font-size: 2.25rem;
@@ -253,12 +386,12 @@ a.nav-link.active {
   font-weight: 500;
 }
 .reg-p {
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   color: #3f3d56;
-  font-weight: 400;
+  font-weight: 500;
 }
 .reg-p-number {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: #0553c8;
   font-weight: 500;
 }
@@ -301,6 +434,9 @@ a.nav-link.active {
 .text-blue {
   color: #0553c8;
 }
+.text-orange{
+  color:#EA940B;
+}
 .b-radius-5 {
   border-radius: 5px;
 }
@@ -310,14 +446,20 @@ a.nav-link.active {
 .font-sm-sm {
   font-size: 0.625rem !important;
 }
+.font-x-sm{
+  font-size:0.75rem;
+}
 .font-sm {
   font-size: 0.825rem;
 }
 .font-rem1 {
   font-size: 0.9rem;
 }
+.base-color{
+  color:rgba(38, 50, 56, 0.8);
+}
 .text-field::placeholder {
-  font-size: 0.825rem !important;
+  font-size: 0.75rem !important;
 }
 
 /* Forms */
@@ -427,6 +569,17 @@ a.btn {
   margin-top: 130px;
   margin-bottom: 130px;
 }
+.my-150{
+  margin-top:200px;
+  margin-bottom:150px;
+}
+.my-80{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.mt-100{
+  margin-top:100px;
+}
 .mt-150 {
   margin-top: 150px;
 }
@@ -512,8 +665,14 @@ a.btn {
   font-weight: 500;
 }
 .text-fantastic {
-  font-size: 2.25rem;
-  color: #000000;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.text-fantastic-p{
+  font-size:1rem;
+}
+.text-fantastic-p2{
+  font-size:0.9rem;
 }
 .light-green-div {
   background-color: #edfffd;
