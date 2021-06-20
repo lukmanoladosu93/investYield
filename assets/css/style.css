@@ -84,6 +84,10 @@ a.nav-link.active {
   background-position: 70% 30%;
   background-image: url("../images/whyInvestImg.png");
 }
+.contactUsForm-resp{
+  top:15%;
+  right:15%;
+}
 @media (max-width:350px) {
   .banner-img2{
     height:1850px!important;
@@ -100,6 +104,15 @@ a.nav-link.active {
   .m-custom-sm{
     margin-top:50px!important;
     margin-bottom:50px!important;
+  }
+  .contactUsForm-resp{
+    position:relative!important;
+    top:0!important;
+    right:0!important;
+  }
+  .p-resp{
+    padding-left:1rem!important;
+    padding-right:1rem!important;
   }
 }
 
@@ -234,10 +247,8 @@ a.nav-link.active {
   font-size: 0.875rem;
   font-weight: 400;
 }
-.contactUs-div {
-  background-color: #f3f8fe;
-  height: 50px;
-  font-size: 1rem !important;
+.div-contact-us{
+  border-radius:5px;
 }
 .contactUs-div2 {
   background-color: #ffffff;
