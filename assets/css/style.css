@@ -538,16 +538,20 @@ a.nav-link.active {
 .btn-transfer {
   background-color: #f3f8fe;
   color: #0553c8;
+  border: 1px solid #0553c8;
   height: 50px;
   width: 100%;
   border-radius: 5px;
+  font-size: 0.875rem;
 }
 .btn-withdraw {
   background-color: #edfffd;
   color: #08b29b;
+  border: 1px solid #08b29b;
   height: 50px;
   width: 100%;
   border-radius: 5px;
+  font-size: 0.875rem;
 }
 a.btn {
   display: flex !important;

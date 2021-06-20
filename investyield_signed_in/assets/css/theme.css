@@ -166,6 +166,115 @@ strong {
   font-weight: 700;
 }
 
+/* Row gaps */
+
+.rg-0 {
+  row-gap: 0rem !important;
+}
+
+.rg-1 {
+  row-gap: 0.25rem !important;
+}
+
+.rg-2 {
+  row-gap: 0.5rem !important;
+}
+
+.rg-3 {
+  row-gap: 1rem !important;
+}
+
+.rg-4 {
+  row-gap: 1.5rem !important;
+}
+
+.rg-5 {
+  row-gap: 3rem !important;
+}
+
+/* Column gaps */
+
+.cg-0 {
+  column-gap: 0rem !important;
+}
+
+.cg-1 {
+  column-gap: 0.25rem !important;
+}
+
+.cg-2 {
+  column-gap: 0.5rem !important;
+}
+
+.cg-3 {
+  column-gap: 1rem !important;
+}
+
+.cg-4 {
+  column-gap: 1.5rem !important;
+}
+
+.cg-5 {
+  column-gap: 3rem !important;
+}
+
+/* text colors */
+.text-stash {
+  color: #b80909;
+}
+.text-stash2 {
+  color: #b80953;
+}
+.text-stash3 {
+  color: #c57902;
+}
+
+.text-green {
+  color: #089985;
+}
+
+.text-blue {
+  color: #0553c8;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* Pie-Chart Text */
+
+.pie-text p:first-child {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.pie-text p:last-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .pie-text {
+    width: auto;
+    text-align: center;
+  }
+  .pie-text p {
+    font-size: 0.725rem !important;
+  }
+}
+
+.pie-text li::marker {
+  font-size: 24px;
+}
+
+.stash-pie-text {
+  color: #333333;
+}
+
+.stash-pie-text::marker {
+  color: #f8df59;
+}
+
 /*-----------------------------------------------------*/
 
 /*                   ELEMENTS                          */
@@ -326,7 +435,7 @@ section {
 }
 
 .page-container {
-  background: #fff;
+  background: #f5f7f7;
   padding-left: 300px;
 }
 
@@ -355,7 +464,7 @@ section {
 }
 
 .main-content {
-  padding-top: 116px;
+  padding-top: 100px;
   min-height: 100vh;
 }
 
@@ -1731,7 +1840,7 @@ section {
   left: 0;
   top: 0;
   bottom: 0;
-  background: #fafafa;
+  background: #ffffff;
   overflow-y: auto;
 }
 
@@ -1780,14 +1889,15 @@ section {
 
 .navbar-sidebar .navbar__list li.active {
   background: #fff;
-  box-shadow: 0px 0px 5px rgb(8 178 155 / 30%);
-  border-radius: 0px 5px 5px 0px;
+  /* box-shadow: 0px 0px 5px rgb(8 178 155 / 30%);
+  border-radius: 0px 5px 5px 0px; */
 }
 
 .navbar-sidebar .navbar__list li:hover {
-  background: #fff;
-  box-shadow: 0px 0px 5px rgb(8 178 155 / 30%);
+  background: #f5f7f7;
   border-radius: 0px 5px 5px 0px;
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-sidebar .navbar__list li a {
@@ -3448,15 +3558,16 @@ a .au-card:hover {
 }
 
 .au-card {
-  -webkit-box-shadow: 0px 4px 30px 0px rgba(5, 83, 200, 0.25);
+  /* -webkit-box-shadow: 0px 4px 30px 0px rgba(5, 83, 200, 0.25);
   -moz-box-shadow: 0px 4px 30px 0px rgba(5, 83, 200, 0.25);
-  box-shadow: 0px 4px 30px 0px rgba(5, 83, 200, 0.25);
-  padding: 35px;
+  box-shadow: 0px 4px 30px 0px rgba(5, 83, 200, 0.25); */
+  padding: 30px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   background: #fff;
   overflow: hidden;
+  position: relative;
 }
 
 .au-card-inner .title-2 {
@@ -3511,20 +3622,47 @@ a .au-card:hover {
   margin-bottom: 40px;
 }
 
+.bg-card-img {
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: soft-light;
+}
+
+.bg-card-img img {
+  object-fit: cover;
+}
+
+.au-card .money-card-header,
+.au-card .money-card-body,
+.au-card .money-card-sign {
+  position: relative;
+  z-index: 2;
+}
+
 .au-card--bg-blue {
-  background-image: -moz-linear-gradient(203deg, #0553c8 0%, #08b29b 100%);
-  background-image: -webkit-linear-gradient(203deg, #0553c8 0%, #08b29b 100%);
-  background-image: -ms-linear-gradient(203deg, #0553c8 0%, #08b29b 100%);
+  background-image: -moz-linear-gradient(203deg, #08b29b -7%, #0553c8 64%);
+  background-image: -webkit-linear-gradient(203deg, #08b29b -7%, #0553c8 64%);
+  background-image: -ms-linear-gradient(203deg, #08b29b -7%, #0553c8 64%);
   box-shadow: none;
 }
 
 .au-card--bg-savings {
-  background: #0553c8;
+  background-image: -moz-linear-gradient(203deg, #0553c8 -38%, #08306b 42%);
+  background-image: -webkit-linear-gradient(203deg, #0553c8 -38%, #08306b 42%);
+  background-image: -ms-linear-gradient(203deg, #0553c8 -38%, #08306b 42%);
   box-shadow: none;
 }
 
 .au-card--bg-investment {
-  background: #08b29b;
+  background-image: -moz-linear-gradient(203deg, #08b29b -38%, #025348 42%);
+  background-image: -webkit-linear-gradient(203deg, #08b29b -38%, #025348 42%);
+  background-image: -ms-linear-gradient(203deg, #08b29b -38%, #025348 42%);
   box-shadow: none;
 }
 
@@ -3548,10 +3686,77 @@ a .au-card:hover {
   transition: 0.2s ease-in;
 }
 
-.au-card-smaller p {
+.au-card-purse {
+  position: relative;
+  padding: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.au-card-purse .au-card-elements {
+  position: relative;
+  z-index: 2;
+}
+
+.au-card-purse::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/purse_bg_img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.au-card-smaller p,
+.au-card-purse p {
   font-size: 0.875rem;
   font-weight: bold;
   margin-top: 20px;
+}
+
+.au-card-bg-vibe-cash {
+  background-color: #fff2bd;
+}
+
+.au-card-bg-food-cash {
+  background-color: #edfffd;
+}
+
+.au-card-bg-tgif-cash {
+  background-color: #f3f8fe;
+}
+
+.au-card-purse .au-card-elements p {
+  color: #000000;
+}
+
+.au-card-bg-vibe-cash p:first-child {
+  color: #b80909;
+  font-size: 0.875rem;
+}
+
+.au-card-bg-food-cash p:first-child {
+  color: #089985;
+}
+
+.au-card-bg-tgif-cash p:first-child {
+  color: #0553c8;
+}
+
+.purse-link-btn {
+  text-decoration: underline;
+  font-size: 12px;
+  color: #000000;
 }
 
 .au-card-bg-retirement {
@@ -3579,9 +3784,9 @@ a .au-card:hover {
 .au-card-bg-movie {
   background-color: #fff7d8;
 }
-.au-card-bg-create-stash {
+.au-card-bg-create-purse {
   background-color: #ffffff;
-  border: 1px solid #08b29b;
+  border: 1.5px solid #08b29b;
 }
 .au-card-bg-wedding {
   background-color: #ffedf5;
@@ -3785,8 +3990,10 @@ a .au-card:hover {
 }
 
 .recent-activities .au-message-list .au-message__item {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .au-message-list.todolist .au-message__item:last-child {
@@ -13754,4 +13961,26 @@ a .au-card:hover {
     rgba(5, 83, 200, 0.97) 93.08%
   );
   border-radius: 5px;
+}
+
+.card-box {
+  flex-grow: 1;
+  width: 120px;
+  cursor: pointer;
+}
+
+.savings-card-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.savings-card-img-box {
+  height: 96px;
+}
+
+.savings-card-img-box img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
