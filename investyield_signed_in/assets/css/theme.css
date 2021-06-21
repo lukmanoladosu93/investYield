@@ -109,6 +109,63 @@ p {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+/* Dashboard Modals */
+.dashboard-modal-header{
+  font-size: 1.5rem;
+  color: #0553c8;
+  font-weight: 700;
+}
+.small-red-line {
+  width: 30px !important;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #f20000;
+}
+.text-field-modal {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.text-field-modal::placeholder {
+  font-size:0.825rem;
+}
+.modal-button{
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: #08b29b;
+  border-radius: 5px;
+}
+.dashboard-modal-p{
+  font-size:0.9rem;
+}
+.modal-div-grey{
+  background-color: #F0F0F0;
+}
+.bvn-text {
+  color: #08b29b;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.bvn-text-p{
+  font-size:0.75rem;
+}
+.modal-close-link{
+  color:#ffffff;
+  position:absolute;
+  right:0;
+  top:-30px;
+}
+.modal-close-link:hover{
+  color:#ffffff!important;
+}
+.modal-backdrop{
+  background-color: #003079!important;
+  opacity: 0.92!important;
+}
 
 /* ----- Typography ----- */
 
@@ -234,11 +291,16 @@ strong {
 }
 
 .text-blue {
-  color: #0553c8;
+  color: #0553c8!important;
 }
 
 .text-black {
   color: #000;
+}
+
+.icon-custom-size1{
+  height:35px;
+  width:35px;
 }
 
 /* Pie-Chart Text */
@@ -294,7 +356,6 @@ strong {
 }
 
 .title-2 {
-  text-transform: capitalize;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -3723,6 +3784,9 @@ a .au-card:hover {
   font-weight: bold;
   margin-top: 20px;
 }
+.au-card-bg-create-group {
+  background-color: #0553C8;
+}
 
 .au-card-bg-vibe-cash {
   background-color: #fff2bd;
@@ -3762,6 +3826,9 @@ a .au-card:hover {
 .au-card-bg-retirement {
   background-color: #edfffd;
 }
+.au-card-bg-retirement {
+  background-color: #edfffd;
+}
 
 .au-card-bg-homeplan {
   background-color: #f3f8fe;
@@ -3790,6 +3857,10 @@ a .au-card:hover {
 }
 .au-card-bg-wedding {
   background-color: #ffedf5;
+}
+.au-card-bg-create-stash {
+  background-color: #ffffff;
+  border: none;
 }
 
 /* .au-card.au-card--bg-lightgold {
@@ -13926,7 +13997,10 @@ a .au-card:hover {
   padding-right: 15px;
 }
 .font-sm {
-  font-size: 0.625rem;
+  font-size: 0.75rem!important;
+}
+.font-sm-sm{
+  font-size:0.625rem;
 }
 .textAreaProfile {
   width: 100%;

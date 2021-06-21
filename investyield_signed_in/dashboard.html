@@ -667,44 +667,25 @@
         <div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="know-better1">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
+                    <a href="#" class="d-flex modal-close-link" data-dismiss="modal">
+                        <span class="px-2">close</span><img src="./assets/images/modal-close.svg" class="img-fluid" alt="close">
+                    </a>
                     <div class="modal-body">
                         <div class="p-4">
-                            <h5 class="login-div-header">We want to know you better</h5>
+                            <h5 class="dashboard-modal-header mb-2">We want to know you better</h5>
                             <div class="small-red-line"></div>
-                            <p class="mt-4">Please provide us with some extra important information for us to verify you
-                                and
-                                know you better.</p>
-                            <div class="mt-4 d-flex justify-content-center">
-                                <img src="./assets/images/qa-img.svg" class="" alt="Quality Assurance">
-                            </div>
-                            <div class="mt-4">
-                                <button class="btn login-submit">CONTINUE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="Know-better2">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="p-4">
-                            <h5 class="login-div-header">We want to know you better</h5>
-                            <div class="small-red-line"></div>
-                            <p class="mt-5">Please provide us with some extra important information for us to verify you
+                            <p class="mt-5 dashboard-modal-p">Please provide us with some extra important information for us to verify you
                                 and
                                 know you better.</p>
                             <div class="form-group mt-3">
-                                <input type="text" class="text-field" placeholder="Enter BVN">
+                                <input type="text" class="text-field-modal" placeholder="Enter BVN">
                             </div>
-                            <div class="d-flex justify-content-center flex-column mt-5">
+                            <div class="d-flex justify-content-center flex-column mt-4">
                                 <a href="#" class="d-flex no-decor bvn-text align-self-center">
-                                    Why we need your BVN <span class="px-2"><i class="fas fa-arrow-down"></i></span>
+                                    Why we need your BVN <span class="px-2"><i class="fas fa-caret-down"></i></span>
                                 </a>
-                                <div class="p-3 bg-grey2 BVN-div mt-4">
-                                    <p>BVN is required to validate your identity and protect you against identity theft.
+                                <div class="p-3 modal-div-grey BVN-div mt-4">
+                                    <p class="bvn-text-p">BVN is required to validate your identity and protect you against identity theft.
                                         This
                                         also ensures another level of safety for your funds, transactions and unlock
                                         some
@@ -712,7 +693,7 @@
                                 </div>
                             </div>
                             <div class="mt-4">
-                                <button class="btn login-submit">CONTINUE</button>
+                                <button class="btn modal-button" data-dismiss="modal" data-toggle="modal" data-target="#know-better2">CONTINUE</button>
                             </div>
                             <div class="mt-4 d-flex justify-content-center">
                                 <a href="#" class="text-green no-decor text-center">I’ll do this later</a>
@@ -723,24 +704,27 @@
             </div>
         </div>
 
-        <div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="testModal">
+        <div class="modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" id="know-better2">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
+                    <a href="#" class="d-flex modal-close-link" data-dismiss="modal">
+                        <span class="px-2">close</span><img src="./assets/images/modal-close.svg" class="img-fluid" alt="close">
+                    </a>
                     <div class="modal-body">
                         <div class="p-4">
-                            <h5 class="login-div-header">We want to know you better</h5>
+                            <h5 class="dashboard-modal-header mb-2">We want to know you better</h5>
                             <div class="small-red-line"></div>
-                            <h6 class="mt-60">Please enter the One-Time Password (OTP) that has been sent to the phone
+                            <h6 class="mt-5 dashboard-modal-p">Please enter the One-Time Password (OTP) that has been sent to the phone
                                 number
                                 <span class="reg-p-number"> +234705*****95.</span> linked with your BVN</h6>
                             <div class="form-group mt-4">
-                                <input type="text" class="text-field" placeholder="Enter OTP">
+                                <input type="text" class="text-field-modal" placeholder="Enter OTP">
                             </div>
                             <div class="mt-5">
-                                <button class="btn login-submit">CONTINUE</button>
+                                <button class="btn modal-button">CONTINUE</button>
                             </div>
-                            <div class="mt-5 d-flex flex-column">
-                                <p class="text-center weight-600">Did not get OTP?</p>
+                            <div class="mt-4 d-flex flex-column">
+                                <p class="text-center weight-600 dashboard-modal-p">Did not get OTP?</p>
                                 <a href="#" class="text-green no-decor text-center mt-2">Resend OTP</a>
                             </div>
                         </div>
@@ -781,6 +765,11 @@
 
     <script>
         feather.replace()
+    </script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#know-better1').modal('show');
+        });
     </script>
 
 </body>
