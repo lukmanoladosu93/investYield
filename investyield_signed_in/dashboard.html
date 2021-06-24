@@ -681,10 +681,10 @@
                                 <input type="text" class="text-field-modal" placeholder="Enter BVN">
                             </div>
                             <div class="d-flex justify-content-center flex-column mt-4">
-                                <a href="#" class="d-flex no-decor bvn-text align-self-center">
+                                <a href="#" class="d-flex no-decor bvn-text align-self-center" id="why-bvn-link">
                                     Why we need your BVN <span class="px-2"><i class="fas fa-caret-down"></i></span>
                                 </a>
-                                <div class="p-3 modal-div-grey BVN-div mt-4">
+                                <div class="p-3 modal-div-grey BVN-div mt-4" id="why-bvn">
                                     <p class="bvn-text-p">BVN is required to validate your identity and protect you against identity theft.
                                         This
                                         also ensures another level of safety for your funds, transactions and unlock
@@ -769,6 +769,17 @@
     <script type="text/javascript">
         $(window).on('load', function() {
             $('#know-better1').modal('show');
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#why-bvn').css('display', 'none');
+
+            $('#why-bvn-link').click(function(){
+                $('#why-bvn').toggle();
+            })
         });
     </script>
 

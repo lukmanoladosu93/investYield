@@ -3816,6 +3816,9 @@ a .au-card:hover {
 .au-card-bg-tgif-cash p:first-child {
   color: #0553c8;
 }
+.au-card-bg-create-savings-ind{
+  border:2px solid #08B29B;
+}
 
 .purse-link-btn {
   text-decoration: underline;

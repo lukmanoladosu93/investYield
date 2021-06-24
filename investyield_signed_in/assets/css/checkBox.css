@@ -45,6 +45,33 @@
   transform: rotate(45deg);
 }
 
+/* styled radio button */
+
+label.radio {
+  cursor: pointer;
+  width:100%;
+}
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+label.radio span {
+  width:100%!important;
+  padding: 7px 14px;
+  border: 2px solid #EEE;
+  display: inline-block;
+  color: #A8A8A8;
+  border-radius: 3px;
+  font-size:0.825rem;
+}
+label.radio input:checked + span {
+  background-color: #C9FFF8;
+  color:#08B29B;
+}
+
 .unstyled {
   margin: 0;
   padding: 0;
