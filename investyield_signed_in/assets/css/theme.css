@@ -14385,3 +14385,14 @@ a .au-card:hover {
   font-weight: 400 !important;
   font-weight: normal !important;
 }
+
+@media (max-width: 767px) {
+  .my-purse-scroll .scrollbar-rail > .scroll-element.scroll-x {
+    min-width: 70%;
+    width: 70%;
+  }
+
+  .header-desktop {
+    display: none;
+  }
+}
