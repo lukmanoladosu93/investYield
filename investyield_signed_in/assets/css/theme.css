@@ -3774,6 +3774,12 @@ a .au-card:hover {
   cursor: pointer;
 }
 
+.au-card-purse:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.07);
+}
+
 .au-card-purse .au-card-elements {
   position: relative;
   z-index: 2;
@@ -3792,6 +3798,18 @@ a .au-card:hover {
   background-repeat: no-repeat;
   z-index: 0;
   opacity: 0.3;
+}
+
+.au-card-purse.au-card-bg-individual-savings::before {
+  background-image: url("../images/individual-savings-icon.svg");
+  background-position: right;
+  opacity: 0.05;
+}
+
+.au-card-purse.au-card-bg-create-group::before {
+  background-image: url("../images/create-new-group-icon.svg");
+  background-position: right;
+  opacity: 0.05;
 }
 
 .au-card-smaller p,
@@ -3834,6 +3852,10 @@ a .au-card:hover {
 }
 .au-card-bg-create-savings-ind {
   border: 2px solid #08b29b;
+}
+
+.au-card-bg-individual-savings {
+  background: #f3f8fe;
 }
 
 .purse-link-btn {
@@ -3880,6 +3902,16 @@ a .au-card:hover {
 .au-card-bg-create-stash {
   background-color: #ffffff;
   border: none;
+}
+
+.au-card-img-box {
+  height: 120px;
+  /* width: 80px; */
+}
+
+.au-card-img-box img {
+  object-fit: contain;
+  height: 100px;
 }
 
 /* .au-card.au-card--bg-lightgold {
@@ -14062,6 +14094,12 @@ a .au-card:hover {
   cursor: pointer;
 }
 
+.my-purse-scroll .card-box {
+  flex-grow: 1;
+  width: 150px;
+  cursor: pointer;
+}
+
 .savings-card-box {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -14184,4 +14222,166 @@ a .au-card:hover {
 
 .pay-method-radio input:checked ~ label span {
   font-weight: bold !important;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-element.scroll-x {
+  bottom: 0px;
+  left: auto;
+  height: 12px;
+  min-width: 80%;
+  padding: 3px 0 2px;
+  width: 90%;
+  right: 0;
+}
+
+.my-purse-scroll {
+  border: none;
+  margin: auto;
+}
+
+.my-purse-scroll {
+  margin-left: 5%;
+}
+
+.external-scroll_x.sus-banking.scroll-scrollx_visible {
+  display: block;
+  height: 5px;
+  left: 1%;
+  right: 5%;
+  width: 95%;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-element.scroll-y {
+  display: none;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-content.scroll-scrollx_visible {
+  height: auto !important;
+  top: 0;
+  width: 100% !important;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-element .scroll-bar {
+  background-color: #0553c8;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.my-purse-scroll
+  .scrollbar-rail
+  > .scroll-element.scroll-x
+  .scroll-element_size {
+  height: 1px;
+}
+
+.my-purse-scroll
+  .scrollbar-rail
+  > .scroll-element
+  .scroll-element_outer:hover
+  .scroll-bar {
+  box-shadow: none;
+}
+
+.scrollbar-rail > .scroll-element,
+.scrollbar-rail > .scroll-element div {
+  z-index: 2 !important;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-element {
+  background-color: transparent;
+}
+
+.my-purse-scroll .left-paddle {
+  /* border: 1px solid #0553c8; */
+  /* border-radius: 100%; */
+  width: 35px;
+  /* height: 35px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-purse-scroll .left-paddle svg,
+.my-purse-scroll .right-paddle svg {
+  stroke: #0553c8;
+}
+
+.my-purse-scroll .right-paddle {
+  left: 45px;
+  /* border: 1px solid #0553c8; */
+  /* border-radius: 100%; */
+  width: 35px;
+  /* height: 35px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-purse-scroll .left-paddle:focus,
+.my-purse-scroll .right-paddle:focus {
+  /* border: 1px solid #0553c8; */
+  box-shadow: none;
+  outline: #0553c8;
+  border-radius: 22.5px;
+}
+
+.my-purse-scroll.menu-wrapper {
+  border: none;
+  margin: auto;
+}
+
+.my-purse-scroll .bank-with-us-text {
+  position: absolute;
+  left: 40px;
+  top: 25%;
+}
+
+.my-purse-scroll.menu-wrapper .card-title {
+  font-size: 0.8em;
+}
+
+.paddle {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 1;
+}
+
+.my-purse-scroll
+  .scrollbar-rail
+  > .scroll-element.scroll-x
+  .scroll-element_outer {
+  height: 5px;
+  left: 5px;
+}
+
+.my-purse-scroll
+  .scrollbar-rail
+  > .scroll-element.scroll-x
+  .scroll-element_size {
+  height: inherit;
+  left: 0px;
+  top: 0px;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #bdd6fd;
+}
+
+.my-purse-scroll .scrollbar-rail > .scroll-element.scroll-x .scroll-bar {
+  height: 100%;
+  min-width: 10px;
+  top: 0px;
+}
+
+.au-card-savings-text {
+  font-weight: 400 !important;
+  font-weight: normal !important;
 }
